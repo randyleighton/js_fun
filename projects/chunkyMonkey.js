@@ -1,12 +1,8 @@
 function chunk(arr, size) {
   outerArr = [];
   innerArr = [];
-  for ( var i = 0 ; i < arr.length ; i++ ) {
-    for (var j = 0; j < size ; j++ ) {
-      innerArr[i].push(arr[i])
-    }
-    console.log(innerArr);
-    // outerArr.push(innerArr)
+  for ( var i = 0 ; i <= arr.length ; i + size ) {
+    innerArr.push[arr.slice(0,size)]
   }
   return arr;
 }
