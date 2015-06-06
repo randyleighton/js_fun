@@ -1,10 +1,15 @@
 function chunk(arr, size) {
-  outerArr = [];
-  innerArr = [];
-  for ( var i = 0 ; i <= arr.length ; i + size ) {
-    innerArr.push[arr.slice(0,size)]
+  finalArr = [];
+  loopSize = arr.length / size
+  var tempVal = ""
+  for ( var i = 0 ; i <= loopSize; i++ ) {
+    tempVal = arr.splice(0,size)
+    console.log("spliced value: " + tempVal)
+    console.log("arr new value: " + arr)
+    finalArr.push(tempVal)
+    console.log("finalArr value: " + finalArr)
   }
-  return arr;
+  return finalArr;
 }
 
 chunk(['a', 'b', 'c', 'd'], 2);
