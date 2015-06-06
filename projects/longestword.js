@@ -13,4 +13,5 @@ function findLongestWord(str) {
 
 findLongestWord('The quick brown fox jumped over the lazy dog');
 
-/* This is to find the longest word and then return the length of that word*/
+/* This is to find the longest word and then return the length of 
+that word*/

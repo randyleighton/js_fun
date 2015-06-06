@@ -16,3 +16,5 @@ console.log("substr test:" + str.substr(subStart, targetLength));
 }
 end('Bastian', 'n');
 
+/* Check if a string (first argument) ends with the given target 
+string (second argument). */
