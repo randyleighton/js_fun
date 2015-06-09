@@ -1,4 +1,15 @@
 function mutation(arr) {
+  arr0 = arr[0].toLowerCase(); 
+  arr1 = arr[1].toLowerCase();
+  console.log("Array[0]: " + arr0); console.log("Array[1]: " + arr1)
+
+  for ( var i = 0; i < arr1.length; i++ ) {
+    if ( arr0.indexOf(arr1[i]) ) == -1 {
+      return false;
+    }
+    return true;
+  }
+
   return arr;
 }
 
