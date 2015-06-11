@@ -4,13 +4,11 @@ function mutation(arr) {
   console.log("Array[0]: " + arr0); console.log("Array[1]: " + arr1)
 
   for ( var i = 0; i < arr1.length; i++ ) {
-    if ( arr0.indexOf(arr1[i]) ) == -1 {
+    if ( arr0.indexOf(arr1[i]) === -1) {
       return false;
     }
-    return true;
   }
-
-  return arr;
+  return true;
 }
 
 mutation(['hello', 'hey']);
@@ -33,5 +31,9 @@ all of the letters in 'line' are present in 'Alien'.
 Lastly, ['Mary', 'Aarmy'] should return false because 'Mary' 
 is only 4 letters while 'Aarmy' is 5, so 'Mary' can't 
 possibly contain 'Aarmy'
+
+Here are some helpful links:
+
+Array.indexOf()
 
 */
