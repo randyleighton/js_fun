@@ -1,14 +1,13 @@
 function bouncer(arr) {
+arrLength = arr.length
 
-for ( var i = 0 ; i < arr.length ; i++ ) {
-  var test = new Boolean(arr[i])
-  console.log(test)
+var test="";
+for ( var i = 0 ; i < arrLength ; i++ ) {
+  test = new Boolean(arr[i])
   if (test != true) {
-    console.log("uh oh")
+    arr.splice(i, 1);  
   } 
 }
-
-  
   return arr;
 }
 
