@@ -1,16 +1,10 @@
 function bouncer(arr) {
-arrLength = arr.length
 
-var test="";
-for ( var i = 0 ; i < arrLength ; i++ ) {
-  test = new Boolean(arr[i])
-  if (test != true) {
-    arr.splice(i, 1);  
-  } 
+  var filterArr = arr.filter(function(value) {
+    return !(value == false || value === "" || typeof value == "undefined" || value === null);
+  });
+  return filterArr;
 }
-  return arr;
-}
-
 bouncer([7, 'ate', '', false, 9]);
 
 /* 
