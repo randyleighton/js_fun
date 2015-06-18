@@ -1,10 +1,15 @@
 function where(collection, source) {
   var arr = [];
   var sourcekey = Object.getOwnPropertyNames(source);
-console.log("sourcekey: " + sourcekey)
-console.log("collection keys: " + collection.keys)
-console.log("source: " + source)
-  // What's in a name?
+  var collect = Object.getOwnPropertyNames(collection[0]);
+  console.log("Object Property Names for Collection: " + collect )
+  console.log("Object Property names for source: " + sourcekey)
+  console.log("collection keys: " + Object.keys(collection) )
+  console.log("collection[0]: " + Object.keys(collection)[0] )
+  console.log("collection[1]: " + Object.keys(collection)[1] )
+  console.log("collection[2]: " + Object.keys(collection)[2] )
+  console.log("source.last: " + source.last); console.log("source.first: " + source.first)
+
   return arr;
 }
 
